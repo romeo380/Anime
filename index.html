@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background">
+    <img class="anime" src="assets/naruto.gif" id="anime-gif" alt="Anime GIF">
+  </div>
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form onsubmit="return playWelcome();">
+      <div class="input-group">
+        <input type="text" placeholder="Username" required>
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <audio id="welcomeSound" src="welcome.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
